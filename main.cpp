@@ -315,6 +315,7 @@ spoofpacket[40] = repacket[40];
 spoofpacket[41] = repacket[41];
 
 while(1){
+    sleep(100);
     printf("ARP SPoofing\n");
 if(pcap_sendpacket(handle,spoofpacket,60)!=0){
     fprintf(stderr," \nError\n",pcap_geterr(handle));
